@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #79827F;
+}
+
+.main-container{
+    width: 50vw;
+    height: 50vh;
+    background-color: black;
+    margin: 20vh auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 20px 30px #00000088;
+	border: 5px solid black;
+    border-radius: 10px;
+}
+
+.arrow-button{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000055;
+    font: bold 30px sans-serif;
+    z-index: 1;
+    opacity: 0;
+}
+
+.arrow-button:hover{
+    opacity: 100%;
+    cursor: pointer;
+    color: white;
+    transition: all 1s;
+}
+
+.container-items{
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    display: flex;
+    overflow: hidden; /*as demais imagens fora do container sumirão */
+}
+
+.image-item{
+    width: 50vw;
+    height: 50vh;
+    transition: all 1s ease-in;
+    
+}
+
+.image-item:first-child{
+    margin-left: -100%; /* para o transition funcionar*/
+}
+
+
+.image-item img{
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+}
